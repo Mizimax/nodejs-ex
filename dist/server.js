@@ -87842,7 +87842,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__angular_core__["a" /* enableProdMode */])();
 var app = __WEBPACK_IMPORTED_MODULE_3_express__();
 var api = new __WEBPACK_IMPORTED_MODULE_8__api_app__["a" /* App */]();
-var port = Number(process.env.PORT || 3000);
+var port = Number(process.env.PORT || 8080);
 app.engine('html', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__modules_ng_express_engine_express_engine__["a" /* ngExpressEngine */])({
     aot: true,
     bootstrap: __WEBPACK_IMPORTED_MODULE_5__ngfactory_app_server_app_module_ngfactory__["a" /* ServerAppModuleNgFactory */]
