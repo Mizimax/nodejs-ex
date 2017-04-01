@@ -142,6 +142,10 @@ var ProfileComponent = (function () {
             _this.loading = false;
         });
     };
+    ProfileComponent.prototype.ngOnDestroy = function () {
+        //clear cache
+        this.http.clearCache();
+    };
     ProfileComponent.ctorParameters = function () { return [{ type: __WEBPACK_IMPORTED_MODULE_0__modules_transfer_http_transfer_http__["a" /* TransferHttp */] }]; };
     return ProfileComponent;
 }());
@@ -232,7 +236,7 @@ function View_AboutView_0(l) {
         ], null, null, null, null, null)),
         (l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* ɵted */](null, ['\n        '])),
         (l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* ɵeld */](0, null, null, 1, 'max-profile', [], null, null, null, __WEBPACK_IMPORTED_MODULE_2__profile_profile_component_ngfactory__["a" /* View_ProfileComponent_0 */], __WEBPACK_IMPORTED_MODULE_2__profile_profile_component_ngfactory__["b" /* RenderType_ProfileComponent */])),
-        __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* ɵdid */](57344, null, 0, __WEBPACK_IMPORTED_MODULE_3__app_pages_Aboutme_profile_profile_component__["a" /* ProfileComponent */], [__WEBPACK_IMPORTED_MODULE_4__modules_transfer_http_transfer_http__["a" /* TransferHttp */]], null, null),
+        __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* ɵdid */](122880, null, 0, __WEBPACK_IMPORTED_MODULE_3__app_pages_Aboutme_profile_profile_component__["a" /* ProfileComponent */], [__WEBPACK_IMPORTED_MODULE_4__modules_transfer_http_transfer_http__["a" /* TransferHttp */]], null, null),
         (l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* ɵted */](null, ['\n    '])),
         (l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["F" /* ɵted */](null, ['\n']))
     ], function (ck, v) {
@@ -468,7 +472,7 @@ function View_ProfileComponent_0(l) {
 function View_ProfileComponent_Host_0(l) {
     return __WEBPACK_IMPORTED_MODULE_1__angular_core__["D" /* ɵvid */](0, [
         (l()(), __WEBPACK_IMPORTED_MODULE_1__angular_core__["E" /* ɵeld */](0, null, null, 1, 'max-profile', [], null, null, null, View_ProfileComponent_0, RenderType_ProfileComponent)),
-        __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* ɵdid */](57344, null, 0, __WEBPACK_IMPORTED_MODULE_3__app_pages_Aboutme_profile_profile_component__["a" /* ProfileComponent */], [__WEBPACK_IMPORTED_MODULE_4__modules_transfer_http_transfer_http__["a" /* TransferHttp */]], null, null)
+        __WEBPACK_IMPORTED_MODULE_1__angular_core__["G" /* ɵdid */](122880, null, 0, __WEBPACK_IMPORTED_MODULE_3__app_pages_Aboutme_profile_profile_component__["a" /* ProfileComponent */], [__WEBPACK_IMPORTED_MODULE_4__modules_transfer_http_transfer_http__["a" /* TransferHttp */]], null, null)
     ], function (ck, v) {
         ck(v, 1, 0);
     }, null);

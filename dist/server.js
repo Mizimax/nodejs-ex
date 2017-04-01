@@ -16721,6 +16721,12 @@ var TransferState = (function () {
     TransferState.prototype.keys = function () {
         return this._map.keys();
     };
+    TransferState.prototype.clear = function () {
+        this._map.clear();
+    };
+    TransferState.prototype.delete = function (key) {
+        this._map.delete(key);
+    };
     TransferState.prototype.get = function (key) {
         return this._map.get(key);
     };
@@ -60717,6 +60723,12 @@ var TransferHttp = (function () {
         this.http = http;
         this.transferState = transferState;
     }
+    TransferHttp.prototype.clearCache = function () {
+        this.transferState.clear();
+    };
+    TransferHttp.prototype.deleteCache = function (key) {
+        this.transferState.delete(key);
+    };
     TransferHttp.prototype.request = function (uri, options) {
         var _this = this;
         return this.getData(uri, options, function (url, options) {
@@ -87830,7 +87842,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_9__angular_core__["a" /* enableProdMode */])();
 var app = __WEBPACK_IMPORTED_MODULE_3_express__();
 var api = new __WEBPACK_IMPORTED_MODULE_8__api_app__["a" /* App */]();
-var port = Number(process.env.PORT || 8080);
+var port = Number(process.env.PORT || 3000);
 app.engine('html', __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_6__modules_ng_express_engine_express_engine__["a" /* ngExpressEngine */])({
     aot: true,
     bootstrap: __WEBPACK_IMPORTED_MODULE_5__ngfactory_app_server_app_module_ngfactory__["a" /* ServerAppModuleNgFactory */]
