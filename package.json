@@ -1,10 +1,10 @@
 {
-  "name": "ng-universal-demo",
+  "name": "mizimax",
   "version": "1.0.0",
   "main": "server.js",
   "repository": {},
   "scripts": {
-    "start": "node dist/server.js"
+    "start": "node dist/server/server.js"
   },
   "engines": {
     "node": ">=6.0.0"
